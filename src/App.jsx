@@ -6,6 +6,7 @@ import LogOut from "./components/LogOut.jsx";
 import Login from "./components/Login.jsx";
 import AboutUs from "./components/AboutUs.jsx";
 import Contact from "./components/Contact.jsx";
+import '../src/scss/main.scss';
 
 function App() {
     return (

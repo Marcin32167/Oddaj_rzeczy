@@ -1,16 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import '../scss/main.scss';
 
 const HomeHeader = () => {
     return (
         <header className="container header__container">
-            <nav>
+            <nav className="navbar">
                 <ul className="menu menu__login">
-                    <li>
-                        <Link to="/logowanie">Zaloguj</Link>
+                    <li className="nav__item--login">
+                        <Link to="/logowanie" className="login__btn">Zaloguj</Link>
                     </li>
-                    <li>
-                        <Link to="/rejestracja">Załóż konto</Link>
+                    <li className="nav__item--register">
+                        <Link to="/rejestracja" className="register__btn">Załóż konto</Link>
                     </li>
                 </ul>
                 <ul className="menu menu__home">
@@ -39,7 +40,7 @@ const HomeHeader = () => {
 
 const MenuItemLink = ({ title, to }) => {
     return (
-        <li>
+        <li className="nav__item">
             <Link to={to}>{title}</Link>
         </li>
     );

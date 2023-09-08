@@ -1,0 +1,38 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+
+.nav__item--login {
+  padding: 10px 9px 10px 9px;
+}
+
+.login__btn {
+  text-decoration: none;
+  color: $third-color;
+  font-family: $font-base;
+}
+
+.nav__item--register {
+  border: 1px solid $secondary-color;
+  padding: 10px 9px 10px 9px;
+  text-decoration: none;
+  font-family: $font-base;
+  color: $third-color;
+}
+
+.register__btn {
+  text-decoration: none;
+  color: $third-color;
+  font-family: $font-base;
+}
+
+.nav__item {
+  padding: 10px 9px 10px 9px;
+
+}
+
+.nav__item a {
+  text-decoration: none;
+  font-family: $font-base;
+  color: $fourth-color;
+}

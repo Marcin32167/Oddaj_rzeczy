@@ -1,5 +1,8 @@
+@import "settings/colors";
 @import "settings/reset";
 @import "settings/fonts";
+@import "global/buttons";
+@import "global/HomeHeader";
 
 
 * {
@@ -17,7 +20,6 @@ html, body {
 
 .container {
   width: 100%;
-  //max-width: 1350px;
-  padding: 1rem;
+  max-width: 1366px;
   margin: 0 auto;
 }
