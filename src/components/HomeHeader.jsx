@@ -25,15 +25,6 @@ const HomeHeader = () => {
                     <MenuItemLink title="Kontakt" to="/kontakt" />
                 </ul>
             </nav>
-            <div className="hero__box">
-                <p>
-                    Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce
-                </p>
-                <div className="hero__btn">
-                    <ButtonLink to="/logowanie" label="Oddaj rzeczy" />
-                    <ButtonLink to="/logowanie" label="Zorganizuj zbiórkę" />
-                </div>
-            </div>
         </header>
     );
 };
@@ -43,14 +34,6 @@ const MenuItemLink = ({ title, to }) => {
         <li className="nav__item">
             <Link to={to}>{title}</Link>
         </li>
-    );
-};
-
-const ButtonLink = ({ to, label }) => {
-    return (
-        <button>
-            <Link to={to}>{label}</Link>
-        </button>
     );
 };
 
