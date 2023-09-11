@@ -3,7 +3,7 @@ import React from "react";
 import decorationImage from '../assets/decoration.svg';
 import homeHeroImage from '../assets/Home-Hero-Image.jpg'
 
-const Main = () => {
+const HeroSection = () => {
     return (
         <section className="hero__section">
             <div className="img__wrapper">
@@ -32,4 +32,4 @@ const ButtonLink = ({ to, label }) => {
     );
 };
 
-export default Main;
+export default HeroSection;

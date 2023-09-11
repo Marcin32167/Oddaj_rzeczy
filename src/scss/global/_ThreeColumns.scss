@@ -1,0 +1,46 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+.columns__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 286px;
+}
+
+.three__columns {
+  height: 384px;
+  background-color: $secondary-color;
+  display: flex;
+  justify-content: center;
+  background: transparent url("src/assets/columns_background.png");
+}
+
+.box__column {
+  text-align: center;
+}
+
+.title__three {
+  font-family: $font-base;
+  font-size: 5.625rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $fourth-color;
+}
+
+.subtitle__three {
+  font-family: $font-base;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $fourth-color;
+  padding-bottom: 1.75rem;
+}
+
+.desc__title {
+  font-family: $font-alt;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: $fourth-color;
+}

@@ -1,5 +1,5 @@
 import HomeHeader from "./HomeHeader.jsx";
-import Main from "./Main.jsx";
+import HeroSection from "./HeroSection.jsx";
 import HomeThreeColumns from "./HomeThreeColumns.jsx";
 import OddajRzeczy from "./OddajRzeczy.jsx";
 import AboutUs from "./AboutUs.jsx";
@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <>
             <HomeHeader/>
-            <Main />
+            <HeroSection />
             <HomeThreeColumns/>
             <OddajRzeczy />
             <AboutUs />
