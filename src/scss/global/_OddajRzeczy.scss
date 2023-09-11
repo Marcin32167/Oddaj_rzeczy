@@ -1,0 +1,76 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+.container__giveaway {
+  padding-top: 40px;
+  background-color: $white-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box__giveaway {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    color: $fourth-color;
+
+    .giveaway__title {
+      font-size: 38px;
+      text-align: center;
+    }
+
+    button {
+      color: #000;
+      font-size: 36px;
+      font-family: $font-base;
+      line-height: 1.25;
+      text-align: center;
+      font-weight: 300;
+      background-color: $white-color;
+      width: 310px;
+      height: 120px;
+      border: 0.75px solid $fourth-color;
+      cursor: pointer;
+      text-transform: uppercase;
+      margin-bottom: 80px;
+      margin-top: 20px;
+    }
+
+    .box__fourcolumns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $base-color;
+      width: 100%;
+      min-height: 325px;
+      gap: 250px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    .box__column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: 150px;
+      width: 100%;
+      min-height: 172px;
+      text-align: center;
+      gap: 16px;
+
+      span {
+        font-size: 18px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid black;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
