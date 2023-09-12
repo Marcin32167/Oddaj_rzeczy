@@ -4,6 +4,7 @@ import HomeThreeColumns from "./HomeThreeColumns.jsx";
 import OddajRzeczy from "./OddajRzeczy.jsx";
 import AboutUs from "./AboutUs.jsx";
 import Contact from "./Contact.jsx";
+import Oddaj from "./Oddaj.jsx";
 import '../scss/main.scss';
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
             <HeroSection />
             <HomeThreeColumns/>
             <OddajRzeczy />
+            <Oddaj />
             <AboutUs />
             <Contact />
 

@@ -6,7 +6,7 @@ import icon4 from "../assets/Icon-4.svg";
 
 const OddajRzeczy = () => {
     return (
-        <div className="container__giveaway">
+        <section className="container__giveaway">
             <div className="box__giveaway">
                 <div className="giveaway__title--wrapper">
                 <h2 className="giveaway__title">Wystarczą 4 proste kroki</h2>
@@ -36,7 +36,7 @@ const OddajRzeczy = () => {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }
 export default OddajRzeczy;
