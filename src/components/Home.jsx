@@ -6,6 +6,7 @@ import AboutUs from "./AboutUs.jsx";
 import Contact from "./Contact.jsx";
 import Oddaj from "./Oddaj.jsx";
 import '../scss/main.scss';
+import WhoWeHelp from "./WhoWeHelp.jsx";
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <OddajRzeczy />
             <Oddaj />
             <AboutUs />
+            <WhoWeHelp />
             <Contact />
 
         </>

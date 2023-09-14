@@ -1,0 +1,168 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab {
+  display: none;
+}
+
+.main__tab--desc {
+  text-align: center;
+  font-family: $font-base;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 66px;
+}
+
+
+.tab {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 23px;
+
+  button {
+    margin: 0 5px;
+    padding: 15px 13px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    &.active {
+      background-color: #fff;
+      color: $fourth-color;
+      border-color: $fourth-color;
+      border: 1px solid $fourth-color;
+    }
+  }
+}
+
+.whowehelp__desc--wrapper {
+  padding-top: 70px;
+}
+
+.box__text--whowehelp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-inline: 50px;
+  text-align: center;
+  color: $fourth-color;
+}
+
+.title__whowehelp {
+  font-family: $font-base;
+  font-size: 38px;
+  line-height: 1.5;
+}
+
+.tab-titles {
+  padding-top: 57px;
+  padding-bottom: 80px;
+
+}
+
+.tab-title {
+  font-size: 23px;
+  font-family: $font-base;
+  font-weight: 400;
+  background-color: $white-color;
+  padding: 23px 42px 23px 42px;
+  border: solid 0.75px $white-color;
+}
+
+.pagination__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 27px;
+}
+
+.tab-title.pagination {
+  padding: 13px 15px 13px 15px;
+  font-size: 18px;
+}
+
+.tab-title.pagination.active {
+  padding: 13px 15px 13px 15px;
+  font-size: 18px;
+}
+
+.tab-title:focus {
+  border: solid 0.75px $fourth-color;
+
+}
+
+.tab-title.active {
+  border: solid 0.75px $fourth-color;
+}
+
+.whowehelp__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list__whowehelp--wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 36px;
+  border-bottom: solid 0.75px $fourth-color;
+}
+
+.main__tab--desc {
+  font-family: $font-base;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.tab-content {
+  width: 100%;
+  max-width: 1366px;
+}
+
+.whoweare__title {
+  font-family: $font-base;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.whoweare__subtitle {
+  font-family: $font-base;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.whowehelp__desc {
+  font-family: $font-base;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+}
