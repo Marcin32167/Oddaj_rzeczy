@@ -136,7 +136,12 @@ const TabsComponent = () => {
                             className={`tab-title ${activeTab === tab.id ? 'active' : ''}`}
                             onClick={() => handleTabSelect(tab.id)}
                         >
-                            {tab.title}
+                            {tab.title.split(' ').map((word, wordIndex) => (
+                                <span key={wordIndex} className="break-word">
+                {word}
+                                    <br />
+            </span>
+                            ))}
                         </button>
                     ))}
                 </div>

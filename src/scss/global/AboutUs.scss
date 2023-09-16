@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    padding-inline: 50px;
+    padding: 150px;
     text-align: center;
     color: $fourth-color;
 
@@ -32,4 +32,8 @@
     .img__signature {
       align-self: end;
     }
+  }
+
+  .about__us--img {
+    width: 50%;
   }
