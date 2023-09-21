@@ -105,20 +105,23 @@ li {
 .tab-title.pagination {
   padding: 13px 15px 13px 15px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .tab-title.pagination.active {
   padding: 13px 15px 13px 15px;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .tab-title:focus {
   border: solid 0.75px $fourth-color;
-
+  cursor: pointer;
 }
 
 .tab-title.active {
   border: solid 0.75px $fourth-color;
+  cursor: pointer;
 }
 
 .whowehelp__wrapper {

@@ -1,0 +1,115 @@
+@import '../settings/colors';
+@import '../settings/fonts';
+
+.section__contact {
+  min-height: 700px;
+  background-image: url(src/assets/Background-Contact-Form.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #FFFFFFC9;
+    opacity: 1;
+    z-index: 0;
+  }
+
+  .contact__form {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact__form--wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__form--holder {
+    width: 528px;
+  }
+  .contact__decoration--wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .contact__decoration {
+    width: 256px;
+    padding-bottom: 70px;
+  }
+  .name__email--Wrapper {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 40px;
+  }
+  .contact__title {
+    text-align: center;
+    font-family: $font-base;
+    font-size: 38px;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-bottom: 25px;
+  }
+  .form__message {
+    display: flex;
+    flex-direction: column;
+  }
+  .form__name {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form__input--name {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px $fourth-color;
+    height: 26px;
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  .form__email {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form__input--email {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px $fourth-color;
+    height: 26px;
+    margin-top: 16px;
+    font-size: 18px;
+  }
+  .form__textarea {
+    max-height: 97px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1px $fourth-color;
+    margin-top: 16px;
+    font-family: $font-base;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .form__btn--wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 40px;
+  }
+  .label-form {
+    font-size: 16px;
+  }
+}

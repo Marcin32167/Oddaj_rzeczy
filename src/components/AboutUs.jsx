@@ -4,7 +4,7 @@ import aboutUsImage from "../assets/People.jpg";
 
 const AboutUs = () => {
     return (
-        <section className="about__us">
+        <section className="about__us" id="o-nas">
                 <div className="box__text">
                     <span>About us</span>
                     <img src={decoration} alt="Decoration"/>

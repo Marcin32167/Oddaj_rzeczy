@@ -1,8 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll"; // Import ScrollLink
+import { useLocation } from "react-router-dom"; // Import useLocation
 import '../scss/main.scss';
 
 const HomeHeader = () => {
+    const location = useLocation(); // Pobierz aktywną ścieżkę
+
     return (
         <header className="container header__container">
             <nav className="navbar">
@@ -15,24 +19,30 @@ const HomeHeader = () => {
                     </li>
                 </ul>
                 <ul className="menu menu__home">
-                    <MenuItemLink title="Start" to="/" />
-                    <MenuItemLink title="O co chodzi?" to="/o-co-chodzi" />
-                    <MenuItemLink title="O nas" to="/o-nas" />
-                    <MenuItemLink
-                        title="Fundacja i organizacje"
-                        to="/fundacja-i-organizacje"
-                    />
-                    <MenuItemLink title="Kontakt" to="/kontakt" />
+                    <MenuItemLink title="Start" to="/" isActive={location.pathname === "/"} />
+                    <MenuItemScrollLink title="O co chodzi?" to="o-co-chodzi" />
+                    <MenuItemScrollLink title="O nas" to="o-nas" />
+                    <MenuItemScrollLink title="Fundacja i organizacje" to="fundacja-i-organizacje" />
+                    <MenuItemScrollLink title="Kontakt" to="contact" />
                 </ul>
             </nav>
         </header>
     );
 };
 
-const MenuItemLink = ({ title, to }) => {
+const MenuItemLink = ({ title, to, isActive }) => {
+    return (
+        <li className={`nav__item ${isActive ? "active" : ""}`}>
+            <Link to={to}>{title}</Link>
+        </li>
+    );
+};
+
+// Komponent MenuItemScrollLink używa ScrollLink zamiast Link
+const MenuItemScrollLink = ({ title, to }) => {
     return (
         <li className="nav__item">
-            <Link to={to}>{title}</Link>
+            <ScrollLink to={to} smooth={true} duration={500}>{title}</ScrollLink>
         </li>
     );
 };

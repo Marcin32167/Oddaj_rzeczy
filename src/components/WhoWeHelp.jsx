@@ -121,7 +121,7 @@ const TabsComponent = () => {
     ]
 
     return (
-        <section className="section__whowehelp">
+        <section className="section__whowehelp" id="fundacja-i-organizacje">
             <div className="whowehelp__desc--wrapper">
                 <div className="box__text--whowehelp">
                     <span className="title__whowehelp">Komu pomagamy?</span>

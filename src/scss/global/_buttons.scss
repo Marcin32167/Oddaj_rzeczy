@@ -27,15 +27,35 @@
 }
 
 .nav__item {
-  padding: 10px 9px 10px 9px;
+  padding: 9px 10px;
+  a {
+    text-decoration: none;
+    font-family: $font-base;
+    color: $fourth-color;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border 0.2s ease-in-out, padding 0.2s ease-in-out;
 
+    &:hover {
+      border-color: $fourth-color;
+      padding: 9px 10px 9px 10px;
+    }
+
+    &:active {
+      border-color: $fourth-color;
+      padding: 9px 10px 9px 10px;
+    }
+  }
+
+  &.active {
+    a {
+      padding: 9px 10px 9px 10px;
+      border-color: $fourth-color;
+    }
+  }
 }
 
-.nav__item a {
-  text-decoration: none;
-  font-family: $font-base;
-  color: $fourth-color;
-}
+
 
 .hero__main--btn {
   font-size: 2.25rem;
@@ -65,5 +85,16 @@
   font-family: $font-base;
   color: $fourth-color;
   font-weight: 300;
+}
+
+.form__btn {
+  font-size: 18px;
+  background-color: $white-color;
+  padding: 13px 52px 12px 53px;
+  border: solid 0.75px $fourth-color;
+  width: 150px;
+  font-family: $font-base;
+  font-weight: 300;
+  cursor: pointer;
 }
 

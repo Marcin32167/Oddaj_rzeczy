@@ -1,6 +1,6 @@
 const HomeThreeColumns = () => {
     return (
-        <section className="three__columns">
+        <section className="three__columns" id="o-co-chodzi">
             <div className="columns__wrapper">
                 <div className="box__column">
                     <p className="title__three">10</p>
