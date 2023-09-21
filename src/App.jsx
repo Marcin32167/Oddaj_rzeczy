@@ -1,11 +1,11 @@
-import Home from "./components/Home.jsx";
+import Home from "../src/components/Home.jsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Oddaj from "./components/Oddaj.jsx";
-import Register from "./components/Register.jsx";
-import LogOut from "./components/LogOut.jsx";
-import Login from "./components/Login.jsx";
-import AboutUs from "./components/AboutUs.jsx";
-import Contact from "./components/Contact.jsx";
+import Oddaj from "../src/components/Oddaj.jsx";
+import Register from "../src/components/Register.jsx";
+import LogOut from "../src/components/LogOut.jsx";
+import Login from "../src/components/Login.jsx";
+import AboutUs from "../src/components/AboutUs.jsx";
+import Contact from "../src/components/Contact.jsx";
 import '../src/scss/main.scss';
 
 function App() {
