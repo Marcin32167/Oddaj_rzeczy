@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import decorationImage from '../assets/decoration.svg';
-import homeHeroImage from '../assets/Home-Hero-Image.jpg'
+import decorationImage from '../assets/Decoration.svg';
+import homeHeroImage from '../assets/Home-Hero-Image.jpg';
 
 const HeroSection = () => {
     return (
