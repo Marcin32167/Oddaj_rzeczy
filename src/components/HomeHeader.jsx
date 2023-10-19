@@ -10,7 +10,7 @@ const HomeHeader = () => {
     return (
         <header className="container header__container">
             <nav className="navbar">
-                <ul className="menu menu__login">
+                <ul className="menu__login">
                     <li className="nav__item--login">
                         <Link to="/logowanie" className="login__btn">Zaloguj</Link>
                     </li>
@@ -18,7 +18,7 @@ const HomeHeader = () => {
                         <Link to="/rejestracja" className="register__btn">Załóż konto</Link>
                     </li>
                 </ul>
-                <ul className="menu menu__home">
+                <ul className="menu__home">
                     <MenuItemLink title="Start" to="/" isActive={location.pathname === "/"} />
                     <MenuItemScrollLink title="O co chodzi?" to="o-co-chodzi" />
                     <MenuItemScrollLink title="O nas" to="o-nas" />
@@ -38,7 +38,6 @@ const MenuItemLink = ({ title, to, isActive }) => {
     );
 };
 
-// Komponent MenuItemScrollLink używa ScrollLink zamiast Link
 const MenuItemScrollLink = ({ title, to }) => {
     return (
         <li className="nav__item">

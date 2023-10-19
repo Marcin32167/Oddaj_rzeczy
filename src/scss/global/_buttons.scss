@@ -3,7 +3,7 @@
 
 
 .nav__item--login {
-  padding: 10px 9px 10px 9px;
+  padding: 10px 9px;
 }
 
 .login__btn {
@@ -14,7 +14,7 @@
 
 .nav__item--register {
   border: 1px solid $secondary-color;
-  padding: 10px 9px 10px 9px;
+  padding: 10px 9px;
   text-decoration: none;
   font-family: $font-base;
   color: $third-color;
@@ -35,21 +35,19 @@
     cursor: pointer;
     border: 1px solid transparent;
     transition: border 0.2s ease-in-out, padding 0.2s ease-in-out;
+    padding: 9px 10px;
 
     &:hover {
       border-color: $fourth-color;
-      padding: 9px 10px 9px 10px;
     }
 
     &:active {
       border-color: $fourth-color;
-      padding: 9px 10px 9px 10px;
     }
   }
 
   &.active {
     a {
-      padding: 9px 10px 9px 10px;
       border-color: $fourth-color;
     }
   }
