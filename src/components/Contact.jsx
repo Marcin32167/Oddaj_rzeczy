@@ -6,9 +6,9 @@ const Contact = () => {
         e.preventDefault();
 
         const data = {
-            message: "pawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelpawelmessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessage",
-            email: "dupa@dupa.pl",
-            name: "pawel"
+            message: "loremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsumloremipsum",
+            email: "mail@nazwa.pl",
+            name: "marcin"
         }
 
         fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
